@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float balance, recharge;
+
+    printf("Enter current balance: ");
+    scanf("%f", &balance);
+
+    printf("Enter recharge amount: ");
+    scanf("%f", &recharge);
+
+    if(recharge <= balance)
+        printf("Recharge Successful\n");
+    else
+        printf("Insufficient Balance\n");
+
+    return 0;
+}
